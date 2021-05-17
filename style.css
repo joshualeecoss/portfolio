@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #eefbfb;
+}
+
+.font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-dark {
+  color: #12232e;
+}
+.font-light {
+  color: #eefbfb;
+}
+
+.headshot {
+  width: 400px;
+  align-self: center;
+}
+
+.title {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sub-title {
+  margin-top: 0px;
+  font-size: 24px;
+  text-transform: none;
+}
+.sub-head {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.header-box {
+  margin-top: 45px;
+  background-color: #007cc7;
+  width: 100%;
+}
+.intro-box {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  align-content: center;
+  background-color: #eefbfb;
+}
+.skill-box {
+  flex-direction: column;
+  width: 100%;
+  background-color: #203647;
+  text-align: center;
+  margin: 0;
+  align-content: center;
+}
+.skill-head {
+  background-color: #203647;
+  padding-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.box {
+  padding: 0;
+  width: 35%;
+}
+.box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+
+.projects-box {
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #eefbfb;
+  align-content: center;
+}
+
+.contact-head {
+  background-color: #203647;
+  padding-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.contact-box {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  background-color: #203647;
+  padding-bottom: 20px;
+}
+.inner-contacts-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  width: 50%;
+  
+}
+.inner-contacts-box.icons {
+  flex-direction: row;
+  align-items: center;
+}
+.contact-line {
+  margin: 5px;
+}
+.icon {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+}
+.icon:hover {
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+.skill-list {
+  text-align: left;
+}
+.resume {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+
+.navigation {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  background: #203647;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.navigation a {
+  font-weight: lighter;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #eefbfb;
+}
+.navigation a:hover {
+  background: #12232e;
+}
+
+.skill-box a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #eefbfb;
+  padding-bottom: 5px;
+}
+.skill-box a:hover {
+  background: #12232e;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.bio {
+  width: 50%;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.collapsible {
+  background-color: #203647;
+  color: #eefbfb;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #12232e;
+}
+.collapsible:after {
+  content: "+";
+  font-size: 20px;
+  color: #eefbfb;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "-";
+}
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #eefbfb;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.inner-projects-box {
+  width: 75%;
+  align-self: center;
+  align-content: center;
+  padding-bottom: 15px;
+}
+.projects-box a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #12232e;
+  padding-bottom: 5px;
+}
+.projects-box a:hover {
+  color: #007cc7;
+}
+
+.screenshot {
+  padding-top: 5px;
+  width: 75%;
+  height: auto;
+}
+.git-link {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  background-color: #eefbfb;
+}

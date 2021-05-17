@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Lee Coss | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="font">
+  <div class="flex-container">
+    <ul class="navigation heading">
+      <li><a href="#">Home</a></li>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li> 
+    </ul>
+  </div>
+  
+  <div class="flex-container">
+    <div class="header-box font-light">
+      <h1 class="title">Joshua Lee Coss</h1>
+      <h2 class="title sub-title">Computer Science Student and Aspiring Game Programmer<h2>
+    </div>
+  </div>
+
+  <div class="flex-container font-dark">
+    <div class="intro-box">
+      <p class="title sub-head" id="intro">
+        Introduction
+      </p>
+      <img class="headshot" src="./img/profile.jpg" alt="A photo of a white man with glasses and a baseball cap"/>
+
+      <p class="bio box2">
+        Hello! My name is Joshua Lee Coss (call me Josh), and I'm a 3rd year Computer Science major
+        at MacEwan University.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="flex-container skill-box font-light">
+    <p class="title sub-head" id="skills">
+      Skills
+    </p>
+    <section class="box2">
+      <div class="box">
+        <h1 class="sub-title">Technical Skills</h1>
+        <ul class="skill-list">
+          <li>Academic knowledge of Python, Java, and C.</li>
+          <li>Academic knowledge of Object Oriented Programming patterns programming best practices</li>
+          <li>Completed online courses related to databases, Git, Unity, and basic web development.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h1 class="sub-title">Non-Technical Skills</h1>
+        <ul class="skill-list">
+          <li>Self-motivation, time management, and problem solving skills gained from 
+            over a decade of work in the hospitality industry.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <a href="./files/resume.pdf" target="_blank">
+      <h1 class="title sub-head resume">Resume</h1>
+    </a>
+  </div>
+
+  <div class="flex-container projects-box font-dark" id="projects">
+    <h1 class="title sub-head">projects</h1>
+    <section class="inner-projects-box">
+      <button type="button" class="collapsible">Volcano List Editor Application</button>
+      <div class="content">
+        <img class="screenshot" src="./img/VolcanoListEditor.png"/>
+        <p>The Volcano List Editor is a JavaFX application that allows a volcanologist to keep track of volcanoes
+          and any associated eruptions. The user can add/delete volcanoes to/from a list, as well
+          as add/delete eruptions to an individual volcano. Data is stored in two seperate CSV files,
+          one for the volcanoes and one for the eruptions, in order to save data between instances.
+        </p>
+        <p>The user can view a chart of a particular volcano's eruptions using the View Line
+          Charts tab. This displays all of the eruptions for a chosen volcano on a line graph, with
+          magnitude on the y-axis and year of eruption on the x-axis.
+        </p>
+        <p>
+          This project was completed in CMPT 305 (Object Oriented Programming) at 
+          MacEwan University in Edmonton, Alberta.
+        </p>
+        <a href="https://github.com/joshualeecoss/volcano-list-editor" target="_blank">
+          <div class="git-link">github</div>
+        </a>
+      </div>
+      <button type="button" class="collapsible">Edmonton Property Assessments Application</button>
+      <div class="content">
+        <img class="screenshot" src="./img/PropertyAssessments.png"/>
+        <p>The Edmonton Property Assessment Application is a JavaFX project that allows the user to
+          look information about Edmonton properties. Property data is loaded
+          into the program from a CSV file. The user can then search through
+          the data via address, neighbourhood, assessment class, or account number.
+        </p>
+        <p>
+          The statistics of the returned properties are displayed as long as there
+          are more than one returned items.
+        </p>
+        <p>
+          This project was completed in CMPT 305 (Object Oriented Programming) at 
+          MacEwan University in Edmonton, Alberta.
+        </p>
+        <a href="https://github.com/joshualeecoss/edmonton-property-assessments" target="_blank">
+          <div class="git-link">github</div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <h1 class="title sub-head contact-head font-light" id="contact">contact me</h1>
+  <div class="flex-container contact-box font-light">
+    <section class="inner-contacts-box">
+      <p class="contact-line">Joshua Lee Coss</p>
+      <p class="contact-line">josh.coss@gmail.com</p>
+      <p class="contact-line">(780) 902-5153</p>
+    </section>
+    <section class="inner-contacts-box icons">
+      <a href="mailto:josh.coss@gmail.com" target="_blank">
+        <img class="icon" src="./img/email-light.png"/>
+      </a>
+      <a href="https://www.linkedin.com/in/joshua-coss-a693a91ba/" target="_blank">
+        <img class="icon" src="./img/linkedin-light.png"/>
+      </a>
+      <a href="https://www.facebook.com/joshua.l.coss/" target="_blank">
+        <img class="icon" src="./img/facebook-light.png"/>
+      </a>
+      <a href="https://github.com/joshualeecoss" target="_blank">
+        <img class="icon" src="./img/github-light.png"/>
+      </a>
+    </section>
+  </div>
+
+  <script src="./portfolio.js"></script>
+</body>
+</html>
